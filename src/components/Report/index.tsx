@@ -1,3 +1,4 @@
+import '../../styles/report_card.sass'
 import { typesCodeMessage } from '../../utils/messages'
 
 type ReportProps = {
@@ -11,11 +12,11 @@ type ReportProps = {
 
 export function Report({ code, type, typeCode, message, context, selector }: ReportProps) {
     return (
-        <article className={`report--${type}`}>
+        <article className={`report report--${type}`}>
             <p className={'code'}>{code} - <strong>{typesCodeMessage[typeCode]}</strong></p>
-            <p className={'message'}>{message}</p>
+            <p>{message}</p>
             <p className={'context'}><code>{context}</code></p>
-            <p className={'selector'}><strong>selector:</strong> {selector}</p>
+            <p><strong>selector:</strong> {selector}</p>
         </article>
     )
 }
