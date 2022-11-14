@@ -4,8 +4,30 @@ body
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
     background: #e9ecef
+    color: #293241
 
 .App
     display: flex
     flex-direction: column
     align-items: center
+
+    & footer
+        position: fixed
+        bottom: -31px
+        right: -20px
+        z-index: 80
+
+        background: #293241
+        padding: 1rem
+        border-radius: 25px 0 0 0
+        border-bottom: solid 2rem #293241
+        border-right: solid 2rem #293241
+        
+        font-size: .7rem
+        color: #FFF
+        & a
+            color: #FFF
+            font-weight: bold
+            transition: color .5s
+            &:hover
+                color: #c0c3c7
