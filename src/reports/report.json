@@ -1,0 +1,242 @@
+[
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,76:1. Recomendação: mude a cor do texto para #00070a.",
+      "context": "<h1>Blog</h1>",
+      "selector": "#root > main > main > section > h1",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude a cor do texto para #499ec2.",
+      "context": "<a href=\"https://dev.to/eucarlos/bibliotecas-nodejs-incriveis-que-voce-nao-tem-ideia-que-existem-3i4b\" target=\"_black\">Bibliotecas NodeJS incríveis qu...</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(1) > div > h4 > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude o plano de fundo para #2a7fa3.",
+      "context": "<a href=\"https://dev.to/eucarlos/bibliotecas-nodejs-incriveis-que-voce-nao-tem-ideia-que-existem-3i4b\" class=\"btn\" target=\"_blank\">Ler postagem</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(1) > div > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude a cor do texto para #499ec2.",
+      "context": "<a href=\"https://dev.to/eucarlos/extensoes-otimas-para-vs-code-e-pouco-falado-f45\" target=\"_black\">Extensões ótimas para VS Code e...</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(2) > div > h4 > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude o plano de fundo para #2a7fa3.",
+      "context": "<a href=\"https://dev.to/eucarlos/extensoes-otimas-para-vs-code-e-pouco-falado-f45\" class=\"btn\" target=\"_blank\">Ler postagem</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(2) > div > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude a cor do texto para #499ec2.",
+      "context": "<a href=\"https://dev.to/eucarlos/corrigir-no-docker-got-permission-denied-issue-5ba\" target=\"_black\">Corrigir no Docker: Got permiss...</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(3) > div > h4 > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude o plano de fundo para #2a7fa3.",
+      "context": "<a href=\"https://dev.to/eucarlos/corrigir-no-docker-got-permission-denied-issue-5ba\" class=\"btn\" target=\"_blank\">Ler postagem</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(3) > div > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento de botão não tem um nome disponível para uma API de acessibilidade. Os nomes válidos são: title undefined, element content, aria-label undefined, aria-labelledby undefined.",
+      "context": "<button class=\"prev-btn\"><svg stroke=\"currentColor\" fill...</button>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(2) > button:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude o plano de fundo para #2a7fa3.",
+      "context": "<button class=\"page-btn active-btn\">1</button>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(2) > button:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento de botão não tem um nome disponível para uma API de acessibilidade. Os nomes válidos são: title undefined, element content, aria-label undefined, aria-labelledby undefined.",
+      "context": "<button class=\"next-btn\"><svg stroke=\"currentColor\" fill...</button>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(2) > button:nth-child(4)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://www.instagram.com/carlos.alves/\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://www.linkedin.com/in/josecarlos98\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://github.com/eucarlos\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(3)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://dribbble.com/eucarlos\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(4)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://dev.to/eucarlos\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(5)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"https://speakerdeck.com/eucarlos\" rel=\"noopener noreferrer\" target=\"blank\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > main > div:nth-child(3) > div > div > a:nth-child(6)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,76:1. Recomendação: mude a cor do texto para #00070a.",
+      "context": "<h1>Tecnologias que trabalho</h1>",
+      "selector": "#root > main > main > div:nth-child(4) > div > h1",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,76:1. Recomendação: mude a cor do texto para #00070a.",
+      "context": "<h2>Ferramentas que trabalho</h2>",
+      "selector": "#root > main > main > div:nth-child(4) > div > h2",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Esperava-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 4,36:1. Recomendação: mude o plano de fundo para #2c2b2b.",
+      "context": "<div class=\"_copyright_ygk3n_17\">Copyright © 2022, All Right Res...</div>",
+      "selector": "#root > main > footer > div:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Esperava-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 4,36:1. Recomendação: mude o plano de fundo para #2c2b2b.",
+      "context": "<a href=\"/portfolio\">Portfólio</a>",
+      "selector": "#root > main > footer > div:nth-child(2) > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Esperava-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 4,36:1. Recomendação: mude o plano de fundo para #2c2b2b.",
+      "context": "<a href=\"/produtos\">Produtos</a>",
+      "selector": "#root > main > footer > div:nth-child(2) > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Esperava-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 4,36:1. Recomendação: mude o plano de fundo para #2c2b2b.",
+      "context": "<a href=\"/contato\">Contato</a>",
+      "selector": "#root > main > footer > div:nth-child(2) > a:nth-child(3)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Esperava-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 4,36:1. Recomendação: mude o plano de fundo para #2c2b2b.",
+      "context": "<a href=\"/feed/blog.xml\" class=\"_rss_ygk3n_25\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > footer > div:nth-child(2) > a:nth-child(4)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elemento âncora encontrado com um atributo href válido, mas nenhum conteúdo de link foi fornecido.",
+      "context": "<a href=\"#top\" class=\"_buttonToTop_ygk3n_32\"><svg stroke=\"currentColor\" fill...</a>",
+      "selector": "#root > main > footer > div:nth-child(2) > a:nth-child(5)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
