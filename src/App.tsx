@@ -1,8 +1,11 @@
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+
 import { Report } from './components/Report'
 import { UID } from './utils/uid'
+
 import './styles/globals.sass'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import './styles/search_reports.sass'
 
 function App() {
 
