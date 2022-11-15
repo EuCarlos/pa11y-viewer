@@ -1,12 +1,27 @@
-import json from './reports/report.json'
 import { Report } from './components/Report'
 import { UID } from './utils/uid'
 import './styles/globals.sass'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function App() {
-  const numberOfReports = json.length
 
-  const reports = json.map(({ code, type, typeCode, message, context, selector }) => {
+  const [url, setUrl] = useState(`http://${window.location.host}/reports/report.json`)
+  const [jsonReports, setJsonReports] = useState([])
+
+  const handle = (url:string) => {
+    axios.get(url)
+        .then(res => setJsonReports(res.data))
+        .catch(err => setJsonReports([]))
+  }
+
+  useEffect(() => {
+    handle(url)
+  }, [])
+  
+  const numberOfReports = jsonReports.length
+
+  const reports = jsonReports.map(({ code, type, typeCode, message, context, selector }) => {
     return <div>
       <Report 
         key={UID()}
@@ -22,6 +37,16 @@ function App() {
 
   return (
     <div className="App">
+      <div className={'forms'}>
+        <input 
+          type="url"
+          placeholder={url}
+          onChange={(e) => setUrl(e.target.value)}
+          value={url}
+        />
+
+        <button onClick={() => handle(url)}>Pesquisar</button>
+      </div>
       <h2>📝 {numberOfReports} Reports</h2>
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
 

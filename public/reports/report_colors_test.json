@@ -1,0 +1,42 @@
+[
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,76:1. Recomendação: mude a cor do texto para #00070a.",
+      "context": "<h1>Blog</h1>",
+      "selector": "#root > main > main > section > h1",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "warning",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude a cor do texto para #499ec2.",
+      "context": "<a href=\"https://dev.to/eucarlos/bibliotecas-nodejs-incriveis-que-voce-nao-tem-ideia-que-existem-3i4b\" target=\"_black\">Bibliotecas NodeJS incríveis qu...</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(1) > div > h4 > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+      "type": "notice",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 4,5:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude o plano de fundo para #2a7fa3.",
+      "context": "<a href=\"https://dev.to/eucarlos/bibliotecas-nodejs-incriveis-que-voce-nao-tem-ideia-que-existem-3i4b\" class=\"btn\" target=\"_blank\">Ler postagem</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(1) > div > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
+      "type": "none",
+      "typeCode": 1,
+      "message": "Este elemento tem contraste insuficiente neste nível de conformidade. Espera-se uma taxa de contraste de pelo menos 3:1, mas o texto neste elemento tem uma taxa de contraste de 2,98:1. Recomendação: mude a cor do texto para #499ec2.",
+      "context": "<a href=\"https://dev.to/eucarlos/extensoes-otimas-para-vs-code-e-pouco-falado-f45\" target=\"_black\">Extensões ótimas para VS Code e...</a>",
+      "selector": "#root > main > main > section > main > section > div:nth-child(1) > article:nth-child(2) > div > h4 > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+]
