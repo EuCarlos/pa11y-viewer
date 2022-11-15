@@ -6,6 +6,7 @@ import { UID } from './utils/uid'
 
 import './styles/globals.sass'
 import './styles/search_reports.sass'
+import { setSearchHistory, getSearchHistory, removeSearchHistory } from './utils/search_history'
 
 function App() {
   const getURL = new URL(location.href)
@@ -13,11 +14,22 @@ function App() {
 
   const [url, setUrl] = useState(initialURL)
   const [jsonReports, setJsonReports] = useState([])
+  const [searchHistory, setNewSearchHistory] = useState(getSearchHistory())
 
+  const handleSearchHistory = (id: string) => {
+    removeSearchHistory(id)
+
+    //const result = searchHistory.filter(item => item.id !== id)
+    setNewSearchHistory(getSearchHistory())
+  }
+  
   const handle = (url:string) => {
     axios.get(url)
         .then(res => setJsonReports(res.data))
         .catch(err => setJsonReports([])) 
+
+    setSearchHistory(url)
+    setNewSearchHistory(getSearchHistory())
   }
 
   useEffect(() => {
@@ -50,7 +62,15 @@ function App() {
           value={url}
         />
 
-        <button onClick={() => handle(url)}>Search</button>
+        <button onClick={() => handle(url)}>Search</button><br/>
+        <div className={'search_history'}>
+          <ul>
+            {searchHistory.map(item => {
+              const link = `http://${window.location.host}/${item.value}`
+              return <li><a href={link}>{item.value}</a> <button onClick={() => handleSearchHistory(item.id)}>X</button></li>
+            })}
+          </ul>
+        </div>
       </div>
       <h2>📝 {numberOfReports} Reports</h2>
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
