@@ -8,14 +8,16 @@ import './styles/globals.sass'
 import './styles/search_reports.sass'
 
 function App() {
+  const getURL = new URL(location.href)
+  const initialURL = new URLSearchParams(getURL.search).get('url') || `http://${window.location.host}/reports/report.json`
 
-  const [url, setUrl] = useState(`http://${window.location.host}/reports/report.json`)
+  const [url, setUrl] = useState(initialURL)
   const [jsonReports, setJsonReports] = useState([])
 
   const handle = (url:string) => {
     axios.get(url)
         .then(res => setJsonReports(res.data))
-        .catch(err => setJsonReports([]))
+        .catch(err => setJsonReports([])) 
   }
 
   useEffect(() => {
@@ -48,7 +50,7 @@ function App() {
           value={url}
         />
 
-        <button onClick={() => handle(url)}>Pesquisar</button>
+        <button onClick={() => handle(url)}>Search</button>
       </div>
       <h2>📝 {numberOfReports} Reports</h2>
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
