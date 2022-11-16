@@ -2,12 +2,14 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 import { Report } from './components/Report'
+import { Header } from './components/Header'
+
 import { UID } from './utils/uid'
+import { trucateString } from './utils/trucate_string'
 
 import './styles/globals.sass'
 import './styles/search_reports.sass'
 import { setSearchHistory, getSearchHistory, removeSearchHistory } from './utils/search_history'
-import { trucateString } from './utils/trucate_string'
 
 function App() {
   const getURL = new URL(location.href)
@@ -59,6 +61,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div className={'forms'}>
         <input 
           type="url"
@@ -82,7 +85,7 @@ function App() {
       <h2>📝 {numberOfReports} Reports</h2>
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
 
-      <footer>Created by <a href="https://github.com/EuCarlos/pa11y-viewer">Carlos Alves</a></footer>
+      <footer>Created by <a href="http://carlosalves.now.sh/" target={'_blank'}>Carlos Alves</a></footer>
     </div>
   )
 }

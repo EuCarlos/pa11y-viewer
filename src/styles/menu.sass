@@ -1,0 +1,88 @@
+header
+    border-bottom: 1px solid #BCC3CC
+    li 
+        list-style: none
+    a 
+        text-decoration: none
+
+    .navbar 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1rem 1.5rem
+        width: 55rem
+
+        .nav-menu 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            
+            .nav-item 
+                margin-left: 3rem
+
+                .nav-link
+                    font-size: 1rem
+                    font-weight: 700
+                    color: #293241
+
+                    &:hover
+                        color: #ef233c
+
+    .hamburger 
+        display: none
+
+        .bar 
+            display: block
+            width: 25px
+            height: 3px
+            margin: 5px auto
+            -webkit-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+            background-color: #293241
+
+// Laptops
+@media screen and (max-width: 992px)
+    header .navbar
+        width: 45rem
+// Tablets
+@media only screen and (max-width: 768px) 
+    header .navbar
+        width: 35rem 
+        .nav-menu 
+            position: absolute
+            left: -108%
+            top: 4rem
+            flex-direction: column
+            background-color: #fff
+            width: 100%
+            border-radius: 10px
+            text-align: center
+            transition: 0.3s
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05)
+            z-index: 10
+        
+            &.active 
+                left: 0
+                border-radius: 0
+        
+            & .nav-item 
+                margin: 1.5rem 0
+    
+    header .hamburger 
+        display: block
+        cursor: pointer
+    
+        &.active .bar
+            &:nth-child(2) 
+                opacity: 0
+    
+            &:nth-child(1) 
+                transform: translateY(8px) rotate(45deg)
+    
+            &:nth-child(3) 
+                transform: translateY(-8px) rotate(-45deg)
+
+// Phones
+@media screen and (max-width: 600px)
+    header .navbar
+        width: 25rem
