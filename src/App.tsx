@@ -7,6 +7,7 @@ import { UID } from './utils/uid'
 import './styles/globals.sass'
 import './styles/search_reports.sass'
 import { setSearchHistory, getSearchHistory, removeSearchHistory } from './utils/search_history'
+import { trucateString } from './utils/trucate_string'
 
 function App() {
   const getURL = new URL(location.href)
@@ -15,11 +16,15 @@ function App() {
   const [url, setUrl] = useState(initialURL)
   const [jsonReports, setJsonReports] = useState([])
   const [searchHistory, setNewSearchHistory] = useState(getSearchHistory())
+  
+  // CSS focus
+  const [focused, setFocused] = useState(false)
+  const onFocus = () => setFocused(true)
+  const onBlur = () => setTimeout(() => setFocused(false), 200)
 
+  
   const handleSearchHistory = (id: string) => {
     removeSearchHistory(id)
-
-    //const result = searchHistory.filter(item => item.id !== id)
     setNewSearchHistory(getSearchHistory())
   }
   
@@ -60,14 +65,16 @@ function App() {
           placeholder={url}
           onChange={(e) => setUrl(e.target.value)}
           value={url}
+          onFocus={onFocus}
+          onBlur={onBlur}
         />
 
         <button onClick={() => handle(url)}>Search</button><br/>
-        <div className={'search_history'}>
+        <div className={'search_history'} style={{ display: focused ? 'block' : 'none' }}>
           <ul>
             {searchHistory.map(item => {
-              const link = `http://${window.location.host}/${item.value}`
-              return <li><a href={link}>{item.value}</a> <button onClick={() => handleSearchHistory(item.id)}>X</button></li>
+              const link = `http://${window.location.host}/?url=${item.value}`
+              return <li><a href={link}>{trucateString(item.value, 45)}</a> <button onClick={() => handleSearchHistory(item.id)}>X</button></li>
             })}
           </ul>
         </div>
