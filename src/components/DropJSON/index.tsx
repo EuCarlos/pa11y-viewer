@@ -1,7 +1,16 @@
+import axios from "axios";
 import { getJSONFile } from "../../utils/get_json_file";
 
-export function DropJSON() {
-    const handleFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => location.href = `/?url=${getJSONFile(e)}`
+type S = any
+
+export function DropJSON({ setJsonReports }: React.SetStateAction<S>) {
+    const handleJsonReports = (url:string) => {
+        axios.get(url)
+            .then(res => setJsonReports(res.data))
+            .catch(() => setJsonReports([])) 
+      }
+
+    const handleFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => handleJsonReports(`${getJSONFile(e)}`)
 
     return <div>
         <input 

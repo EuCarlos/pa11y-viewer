@@ -10,6 +10,7 @@ import { trucateString } from './utils/trucate_string'
 import './styles/globals.sass'
 import './styles/search_reports.sass'
 import { setSearchHistory, getSearchHistory, removeSearchHistory } from './utils/search_history'
+import { DropJSON } from './components/DropJSON'
 
 function App() {
   const getURL = new URL(location.href)
@@ -86,6 +87,7 @@ function App() {
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
 
       <footer>Created by <a href="http://carlosalves.now.sh/" target={'_blank'}>Carlos Alves</a></footer>
+      <DropJSON setJsonReports={setJsonReports} />
     </div>
   )
 }
