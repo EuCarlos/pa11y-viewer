@@ -19,6 +19,7 @@ function App() {
   const [url, setUrl] = useState(initialURL)
   const [jsonReports, setJsonReports] = useState([])
   const [searchHistory, setNewSearchHistory] = useState(getSearchHistory())
+  const [toggleDragNDrop, setToggleDragNDrop] = useState(false)
   
   // CSS focus
   const [focused, setFocused] = useState(false)
@@ -61,7 +62,7 @@ function App() {
   })
 
   return (
-    <div className="App">
+    <div className="App" onDragOver={() => setToggleDragNDrop(true)} onDragLeave={() => setToggleDragNDrop(false)}>
       <Header />
       <div className={'forms'}>
         <input 
@@ -87,7 +88,7 @@ function App() {
       {numberOfReports <= 0 ? <div className={'report--not-found'}>No reports found</div>: reports}
 
       <footer>Created by <a href="http://carlosalves.now.sh/" target={'_blank'}>Carlos Alves</a></footer>
-      <DropJSON setJsonReports={setJsonReports} />
+      {toggleDragNDrop ? <DropJSON setJsonReports={setJsonReports} setToggleDragNDrop={setToggleDragNDrop} /> : ''}
     </div>
   )
 }
