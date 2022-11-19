@@ -1,10 +1,16 @@
 # Pa11y Viewer
 
 <p align="center">
-    Pa11y Viewer with ReactJS, VITE and TypeScript by <a href="https://github.com/EuCarlos">@EuCarlos</a><br>
+    <img src="./public/assets/Pa11y-Viewer-Logo.svg" alt="logo Pa11y Viewer" /><br/>
+    An Open-Source project that loads Pa11y reports in JSON format and highlights any accessibility issues found.<br/></br>
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EuCarlos/pa11y-viewer?color=orange&style=for-the-badge">
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/eucarlos/pa11y-viewer?style=for-the-badge">
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/eucarlos/pa11y-viewer?style=for-the-badge"><br/></br>
+    <a href="https://github.com/EuCarlos/pa11y-viewer#installation">Install locally</a> |
+    <a href="https://github.com/EuCarlos/pa11y-viewer/wiki/Pa11y-Viewer:-How-to-Use">How to use</a> | 
+    <a href="https://github.com/EuCarlos/pa11y-viewer#how-to-contribute-to-this-project">How to contribute</a>
 </p>
+
+🌐 _Para a versão em português deste README, [clique aqui](./docs/locales/pt-br/README.md)._
 
 ## Demo:
 <p align="center">
