@@ -13,8 +13,10 @@ import { setSearchHistory, getSearchHistory, removeSearchHistory } from './utils
 import { DropJSON } from './components/DropJSON'
 
 function App() {
+  const PROTOCOL = location.protocol
+
   const getURL = new URL(location.href)
-  const initialURL = new URLSearchParams(getURL.search).get('url') || `http://${window.location.host}/reports/report.json`
+  const initialURL = new URLSearchParams(getURL.search).get('url') || `${PROTOCOL}//${window.location.host}/reports/report.json`
 
   const [url, setUrl] = useState(initialURL)
   const [jsonReports, setJsonReports] = useState([])
@@ -78,7 +80,7 @@ function App() {
         <div className={'search_history'} style={{ display: focused ? 'block' : 'none' }}>
           <ul>
             {searchHistory.map(item => {
-              const link = `http://${window.location.host}/?url=${item.value}`
+              const link = `${PROTOCOL}//${window.location.host}/?url=${item.value}`
               return <li><a href={link}>{trucateString(item.value, 45)}</a> <button onClick={() => handleSearchHistory(item.id)}>X</button></li>
             })}
           </ul>
