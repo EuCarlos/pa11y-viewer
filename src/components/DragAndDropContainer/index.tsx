@@ -1,19 +1,22 @@
 import axios from "axios"
+import { ChangeEvent, SetStateAction } from "react"
 import { getJSONFile } from "../../utils/get_json_file"
+
 import '../../styles/drag_n_drop.sass'
 
 type S = any
 
-export function DropJSON({ setJsonReports, setToggleDragNDrop }: React.SetStateAction<S>) {
-    const handleJsonReports = (url:string) => {
-        axios.get(url)
-            .then(res => setJsonReports(res.data))
-            .catch(() => setJsonReports([])) 
+export function DragAndDropContainer({ setJSONReports, setIsDragged }: SetStateAction<S>) {
+    const handleJSONReports = (url:string) => {
+        axios
+            .get(url)
+                .then(res => setJSONReports(res.data))
+                .catch(() => setJSONReports([])) 
 
-        setToggleDragNDrop(false)
+        setIsDragged(false)
       }
 
-    const handleFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => handleJsonReports(`${getJSONFile(e)}`)
+    const handleFilesChange = (e: ChangeEvent<HTMLInputElement>) => handleJSONReports(`${getJSONFile(e)}`)
 
     return <div className="drag-n-drop">
         <label className="dragable-area" htmlFor="json-file">
